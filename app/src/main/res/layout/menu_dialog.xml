@@ -81,8 +81,15 @@
                     android:id="@+id/btn_languages"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/ic_arrow_right" />
+                    android:background="@drawable/ic_arrow_right" />
             </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:visibility="gone"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
 
             <View
                 android:layout_width="match_parent"
@@ -113,7 +120,30 @@
                     android:id="@+id/btn_contact"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/ic_arrow_right" />
+                    android:background="@drawable/ic_arrow_right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnr_contact_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    style="@style/DialogOptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="www.maarnaol.com" />
+
+                <TextView
+                    style="@style/DialogOptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="contact@maarnail.com" />
             </LinearLayout>
 
             <View
