@@ -32,6 +32,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
                 android:padding="10dp">
@@ -60,6 +63,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
                 android:padding="10dp">
@@ -69,9 +75,10 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Nyelvek" />
+                    android:text="Nyelv" />
 
                 <ImageView
+                    android:id="@+id/btn_languages"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:src="@drawable/ic_arrow_right" />
@@ -88,6 +95,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
                 android:padding="10dp">
@@ -100,6 +110,7 @@
                     android:text="Kapcsolat" />
 
                 <ImageView
+                    android:id="@+id/btn_contact"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:src="@drawable/ic_arrow_right" />
