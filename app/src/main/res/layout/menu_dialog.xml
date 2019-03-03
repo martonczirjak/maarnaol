@@ -88,6 +88,7 @@
                 android:id="@+id/recycler_view"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
+                android:scrollbars="vertical"
                 android:visibility="gone"
                 app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
 
