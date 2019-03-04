@@ -15,10 +15,13 @@ import mmsone.com.maarnaol.databinding.LanguageItemBinding;
 public class LanguageAdapter extends RecyclerView.Adapter<LanguageAdapter.LanguageViewHolder> {
 
     private List<LanguageItem> recyclerLanguages;
+    private OnLanguageClickListener listener;
 
-    public LanguageAdapter(List<LanguageItem> ticketList) {
+
+    public LanguageAdapter(List<LanguageItem> ticketList, OnLanguageClickListener listener) {
         this.recyclerLanguages = ticketList;
 
+        this.listener = listener;
     }
 
     public List<LanguageItem> getRecyclerLanguages() {
@@ -28,6 +31,8 @@ public class LanguageAdapter extends RecyclerView.Adapter<LanguageAdapter.Langua
     public void setRecyclerLanguages(List<LanguageItem> recyclerLanguages) {
         this.recyclerLanguages = recyclerLanguages;
     }
+
+
 
     @NonNull
     @Override
@@ -40,6 +45,9 @@ public class LanguageAdapter extends RecyclerView.Adapter<LanguageAdapter.Langua
     @Override
     public void onBindViewHolder(@NonNull LanguageViewHolder ticketViewHolder, int i) {
         ticketViewHolder.languageName.setText(recyclerLanguages.get(i).getLanguageName());
+        ticketViewHolder.languageName.setOnClickListener(view ->{
+                listener.onItemClick(recyclerLanguages.get(i));
+        });
     }
 
     @Override
@@ -54,6 +62,13 @@ public class LanguageAdapter extends RecyclerView.Adapter<LanguageAdapter.Langua
             super(itemView.getRoot());
             languageName = itemView.txtLanguage;
         }
+
+
     }
+
+    public interface OnLanguageClickListener {
+        void onItemClick(LanguageItem item);
+    }
+
 
 }

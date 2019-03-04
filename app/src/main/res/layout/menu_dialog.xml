@@ -19,7 +19,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Menü:"
+                android:text="@string/menu"
                 android:textSize="15dp" />
 
             <View
@@ -44,7 +44,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Maarnaol leírása" />
+                    android:text="@string/marnaaol_desc" />
 
                 <ImageView
                     android:layout_width="30dp"
@@ -75,7 +75,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Nyelv" />
+                    android:text="@string/lang" />
 
                 <ImageView
                     android:id="@+id/btn_languages"
@@ -116,7 +116,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Kapcsolat" />
+                    android:text="@string/contact" />
 
                 <ImageView
                     android:id="@+id/btn_contact"

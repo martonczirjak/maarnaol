@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Maarnaol</string>
+    <string name="lang">Nyelv</string>
+    <string name="menu">Menü:</string>
+    <string name="welcome_1">ez</string>
+    <string name="welcome_2">lesz</string>
+    <string name="welcome_3">a</string>
+    <string name="welcome_4">magyar</string>
+    <string name="marnaaol_desc">Maarnaol leírása</string>
+    <string name="desc_text">Ez lesz a magyar szöveg</string>
+    <string name="contact">Kapcsolat</string>
+    <string name="contactdesc">www.maarnaol.com</string>
+</resources>

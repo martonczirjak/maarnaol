@@ -65,28 +65,28 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="MAARNAOL meditations from Gabor Pete." />
+                        android:text="@string/welcome_1" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center"
-                        android:text="I recommend these exercises to those who want real experiences and want to get the maximum of their minds, furthermore, to those who would like to get rid of their anxiety and stress." />
+                        android:text="@string/welcome_2" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center"
-                        android:text="Start the meditation and follow the instructions. Practice every day and get to know the world in a way you have not experienced before, to improve your mental and emotional abilities." />
+                        android:text="@string/welcome_3" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center"
-                        android:text="I wish you a pleasant and useful exercise!" />
+                        android:text="@string/welcome_4" />
                 </LinearLayout>
 
                 <LinearLayout

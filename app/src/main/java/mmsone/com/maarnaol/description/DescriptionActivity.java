@@ -1,10 +1,12 @@
 package mmsone.com.maarnaol.description;
 
+import android.content.Context;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
+import mmsone.com.maarnaol.LocaleHelper;
 import mmsone.com.maarnaol.R;
 import mmsone.com.maarnaol.databinding.ActivityDescriptonBinding;
 
@@ -16,5 +18,10 @@ public class DescriptionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_descripton);
 
+    }
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
     }
 }
